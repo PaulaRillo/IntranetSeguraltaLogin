@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/* Base */
+html {
+  width: 100%;
+  height: 100%;
+  background: #28201b; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #212121;
+  background: #28201b; }
+  body.background {
+    height: 100%; }
+    body.background main {
+      margin: 0 !important;
+      height: 100%; }
+      body.background main .container {
+        height: 100%; }
+
+
+  body.background {
+	/*background: url('../img/background.png') repeat;*/
+    background: url("../img/background.png") no-repeat center center fixed;
+    background-size: cover;
+    }
+
+.fixed-background {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.login-box {
+  background: rgba(255, 255, 255, 0.7);
+  color: inherit;
+  padding: 10%;
+  border-color: #e7eaec;
+  border-radius: calc(0.2rem - 1px);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04); }
+
+.login-box .form-group{
+	margin-bottom: 2rem; }
+
+.login-box .form-group input{
+	background:transparent; 
+	border-color:#d5711f; 
+	color:#000;}
+.login-box .form-group input:focus{
+	border-color:#d5711f; }
+.login-box .form-group input::placeholder{
+	color:#000;}
+.logo-single {
+  width: 100%;
+  height: 120px;
+  background: url("../img/logo-black.svg") no-repeat;
+  background-position: center center;
+  display: inline-block;
+  margin-bottom: 60px; }
+
+@media (max-width: 768px) {
+    .login-quote {
+	  	display:none; }
+
+}
+
+.btn-orange {
+  background-color: #e2863b;
+  border-color: #e2863b;
+  color: #fff;
+}
+.btn-orange:hover {
+  background-color: #d5711f;
+}
+
+.login-box a{
+	color:#212121;
+}
+
+.login-quote {
+	font-family: "Oswald";
+	font-size:24px;
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+	text-shadow: 2px 2px 8px #000;
+}
